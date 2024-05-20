@@ -1,3 +1,5 @@
+package Ejer4;
+
 class ListaCircularIndio {
     NodoIndio cab;
     NodoIndio movil;
@@ -54,17 +56,4 @@ class ListaCircularIndio {
     }
 
 
-
-    public static void imprimirLista(NodoIndio inicio) {
-        if (inicio == null) {
-            System.out.println("La lista está vacía.");
-            return;
-        }
-
-        NodoIndio temp = inicio;
-        do {
-            System.out.println("Nombre: " + temp.nombre + ", Edad: " + temp.edad);
-            temp = temp.sig;
-        } while (temp != inicio);
-    }
 }
